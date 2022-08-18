@@ -1,0 +1,274 @@
+* {
+ 
+}
+
+body {
+  background: url('../radio/imagens/image-title.png');
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  background-repeat: no-repeat;
+  
+  
+}
+
+.banner {
+  margin: -20%;
+  margin-block: -30px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+
+.title {
+  font-size: 20px;
+  color: white;
+  padding: 50px;
+  
+}
+
+.title h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.title-podcast {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 200px;
+  
+}
+
+.title-podcast h3 {
+  height: 50px;
+  font-size: 20px;
+  color: white;
+}
+
+.video {
+  margin-bottom: 300px;
+}
+
+
+.player{
+  height: 60vh;
+  display: flex;
+  padding: -300px;
+  margin-bottom: 500px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+ 
+  
+}
+.wrapper{
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  border: 2px solid transparent;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  
+}
+.details{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.track-art{
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #fff;
+  /* background: url('../radio/imagens/logo.png'); */
+  background-position: center;
+  border-radius: 50%;
+  -moz-box-shadow: 0px 6px 5px #ccc;
+  -webkit-box-shadow:0px 6px 5px #ccc;
+  box-shadow: 0px 6px 5px #ccc;
+  -moz-border-radius:190px;
+  -webkit-border-radius:190px;
+  border-radius: 190px;
+}
+.now-playing{
+  font-size: 1rem;
+}
+.track-name{
+  font-size: 2.5rem;
+}
+.track-artist{
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.active{
+  color: black;
+}
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track{
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover{
+  opacity: 1.0;
+}
+.slider_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seek_slider,
+.volume_slider{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #035d16;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid #035d16;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.seek_slider:hover,
+.volume_slider:hover{
+  opacity: 1.0;
+}
+.seek_slider{
+  width: 60%;
+}
+.volume_slider{
+  width: 20%;
+}
+.current-time,
+.total-duration{
+  padding: 10px;
+}
+i.fa-volume-down,
+i.fa-volume-up{
+  padding: 10px;
+}
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward{
+  cursor: pointer;
+}
+.randomActive{
+  color: black;
+}
+.rotate{
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation{
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(359deg);
+  }
+}
+.loader{
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader .stroke{
+  background: #f1f1f1;
+  height: 150%;
+  width: 10px;
+  border-radius: 50px;
+  margin: 0px 5px;
+  animation: animate 1.4s linear infinite;
+}
+@keyframes animate{
+  50%{
+      height: 20%;
+      background: #000000;
+  }
+  100%{
+      height: 100%;
+  }
+}
+.stroke:nth-child(1){
+  animation-delay: 0s;
+}
+.stroke:nth-child(2){
+  animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+  animation-delay: 0.6s;
+}
+.stroke:nth-child(4){
+  animation-delay: 0.9s;
+}
+.stroke:nth-child(5){
+  animation-delay: 0.6s;
+}
+.stroke:nth-child(6){
+  animation-delay: 0.3s;
+}
+.stroke:nth-child(7){
+  animation-delay: 0s;
+}
+
+.social-links {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.social-links a {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+} 
+.social-facebook, .social-links  {
+ margin-bottom: -70px;
+ margin-left: 25%;
+ margin-right: 100px;
+}
+.social-instagram, .social-links  {
+  margin-bottom: 100px;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+.social-youtube, .social-links  {
+  margin-bottom: 50px;
+  margin-right: 130px;
+  margin-top: -131px;
+  margin-left: 100px;
+}
+.copyright {
+  color: #fff;
+  margin-bottom: 80px;
+}
+
